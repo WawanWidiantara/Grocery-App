@@ -33,7 +33,15 @@
             android:text="Detail Katalog"
             android:textColor="@color/black"
             android:textSize="20sp" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Test" />
 
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmerDetailCatalog"
