@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/bg_dialog_qrcode"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageQRCode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/example_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textDialogQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan serahkan QR Code berikut kepada kasir."
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/thridBlack"
+            android:justificationMode="inter_word"
+            android:gravity="center"
+            android:fontFamily="@font/mitr_regular" />
+
+
+    </LinearLayout>

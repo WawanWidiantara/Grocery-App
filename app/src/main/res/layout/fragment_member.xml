@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MemberFragment">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mitr_medium"
+        android:layout_marginBottom="25dp"
+        android:text="My Member" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:background="@drawable/bg_rounded_member"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum ada produk nih yang bisa di bayar, yuk tambah produk."
+                android:textColor="#EA4E2C"
+                android:textSize="10dp"
+                android:fontFamily="@font/mitr_regular"/>
+
+
+        </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cardQRCode"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#F4F6FA"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_member_generate"
+                android:textSize="10sp"
+                android:textColor="@color/thridBlack"
+                android:justificationMode="inter_word"
+                android:gravity="center"
+                android:fontFamily="@font/mitr_regular"/>
+
+            <Button
+                android:id="@+id/btnGenerate"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button"
+                android:text="Generate QR Code"
+                android:fontFamily="@font/mitr_medium"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayoutMember"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:background="@color/shimmer_color"
+                android:layout_height="50dp">
+
+            </LinearLayout>
+            <include layout="@layout/shimmer_fetch_member"/>
+            <include layout="@layout/shimmer_fetch_member"/>
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recycleViewMember"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        tools:listitem="@layout/fetch_member" />
+
+</LinearLayout>

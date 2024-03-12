@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:layout_marginBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="20dp"
+
+        android:background="#F4F6FA"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+            <ImageView
+                android:id="@+id/imagePromo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example_image"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titlePromo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="CARRY OUTER BROWN"
+                android:fontFamily="@font/mitr_medium"
+                android:textColor="@color/thridBlack"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/jenisPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pieces"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mitr_light"
+                android:textColor="#444444"
+                android:textSize="8sp"/>
+            <TextView
+                android:id="@+id/hargaPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 249.000"
+                android:fontFamily="@font/mitr_medium"
+                android:textSize="8sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/price"
+                />
+            <TextView
+                android:id="@+id/diskonPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diskon"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="8sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#808495"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnAktifkanPromo"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/primary"
+                android:theme="@style/AppTheme"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cheklist_primary_color"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aktifkan"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/primary"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+
+</com.google.android.material.card.MaterialCardView>

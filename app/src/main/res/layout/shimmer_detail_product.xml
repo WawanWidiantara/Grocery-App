@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop"
+        android:background="@color/shimmer_color" />
+
+    <!--Second Parent-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_color"
+            android:fontFamily="@font/mitr_medium"
+            android:textSize="18sp"
+            android:textColor="@color/thridBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_color"
+            android:textSize="22sp"
+            android:textColor="@color/price"
+            android:fontFamily="@font/mitr_medium"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_color"
+            android:fontFamily="@font/mitr_regular"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_color"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/shimmer_color"
+            android:fontFamily="@font/mitr_light"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="30dp"
+            android:text="Aktifkan Produk"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mitr_medium"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">groceryApp</string>
+    <string name="syarat_ketentuan">Saya menyetujui Ketentuan dan Kebijakan Privasi</string>
+    <string name="diskon"><strike>Rp 299.000</strike></string>
+    <string name="alamat">Jalan Tentara Pelajar No. 39 Tebet, Jakarta Selatan, DKI Jakarta</string>
+    <string name="deskripsi">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_member_generate">Silakan kllik tombol Generate QR Code dibawah untuk membuat QR Code yang dapat digunakan untuk melakukan pembayaran ke kasir.</string>
+</resources>

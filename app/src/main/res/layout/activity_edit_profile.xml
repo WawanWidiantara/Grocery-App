@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:layout_width="match_parent">
+    <!--back-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@id/backActivity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_activity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profil"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_medium"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/shimmer_edit_profile"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/parentEditProfile"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="50dp"
+            tools:context=".EditProfile">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/example_image"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/gantiFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganti Foto"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/mitr_regular"
+                android:layout_gravity="center"
+                 android:layout_marginTop="10dp"/>
+
+
+            <!--Nama-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nama"
+                    android:textColor="@color/secondBlack"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textColor="@color/redWarning"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edNama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sella Fransisca"
+                android:textColor="@color/thridBlack"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="14sp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingStart="20dp"
+                />
+            <!--Nomor Ponsel-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nomor Ponsel"
+                    android:textColor="@color/secondBlack"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textColor="@color/redWarning"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edNomorPonsel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="0825252525"
+                android:textColor="@color/thridBlack"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="14sp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingStart="20dp"
+                />
+            <!--Alamat-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Alamat"
+                    android:textColor="@color/secondBlack"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textColor="@color/redWarning"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="@string/alamat"
+                android:textColor="@color/thridBlack"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="14sp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                />
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mitr_medium"
+                android:textSize="12sp"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

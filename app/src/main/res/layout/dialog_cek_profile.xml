@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_warning"
+    android:gravity="center"
+    android:padding="25dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warning"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mitr_medium"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:text="Anda belum melengkapi profile"
+            android:textColor="#721C24"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnWarning"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Lengkapi Sekarang"
+        android:textColor="#F5C6CB"
+        android:fontFamily="@font/mitr_regular"
+        android:background="@drawable/btn_warning"/>
+
+
+</LinearLayout>

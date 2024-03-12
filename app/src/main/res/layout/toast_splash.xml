@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/textToast"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableStart="@drawable/alert_warning"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/mitr_medium"
+        android:textSize="8dp"
+        android:text="Koneksi internet terputus"
+        android:textColor="#721C24" />
+
+</LinearLayout>

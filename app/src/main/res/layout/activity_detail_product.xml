@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--back-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backActivity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_activity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Produk  "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_medium"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerDetailProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/shimmer_detail_product" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            tools:context=".DetailProduct">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.ortiz.touchview.TouchImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:src="@drawable/example_image"
+                    android:scaleType="centerCrop" />
+
+                <!--Second Parent-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:text="CARRY OUTER BROWN"
+                        android:fontFamily="@font/mitr_medium"
+                        android:textSize="15sp"
+                        android:textColor="@color/thridBlack"/>
+
+                    <TextView
+                        android:id="@+id/hargaDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RP 249.000"
+                        android:textSize="12sp"
+                        android:textColor="@color/price"
+                        android:fontFamily="@font/mitr_medium"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/diskonDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diskon"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="10sp"
+                        android:textColor="#808495"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi Produk"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mitr_regular"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/deskripsiDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deskripsi"
+                        android:fontFamily="@font/mitr_light"
+                        android:justificationMode="inter_word"
+                        android:textSize="8sp"
+                        android:textColor="#808495"
+                        android:layout_marginTop="5dp"/>
+
+                    <Button
+                        android:id="@+id/btnActivate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginTop="30dp"
+                        android:text="Aktifkan Produk"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/mitr_medium"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

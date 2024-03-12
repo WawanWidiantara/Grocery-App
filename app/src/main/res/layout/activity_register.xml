@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        tools:context=".RegisterActivity">
+
+        <!--Warning-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_warning"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warning" />
+
+            <TextView
+                android:id="@+id/verifikasiEmailPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pastikan semua kolom terisi"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/thridBlack"
+                android:textSize="14sp"
+                android:fontFamily="@font/mitr_regular" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/secondlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_regular"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mitr_light"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:text="Yuk buat akunmu sebelum belanja" />
+
+        <!--Nama-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Nama"
+                android:textColor="@color/secondBlack"
+                android:fontFamily="@font/mitr_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:fontFamily="@font/mitr_regular"
+                android:textColor="@color/redWarning" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edNama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan nama lengkap"
+            android:textColor="@color/inputText"
+            android:fontFamily="@font/mitr_light"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingStart="20dp"
+            android:textSize="14sp" />
+        <!--Email-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Email"
+                android:textColor="@color/secondBlack"
+                android:fontFamily="@font/mitr_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:fontFamily="@font/mitr_regular"
+                android:textColor="@color/redWarning" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan alamat email"
+            android:textColor="@color/inputText"
+            android:fontFamily="@font/mitr_light"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingStart="20dp"
+            android:textSize="14sp" />
+        <!--Password-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Password"
+                android:textColor="@color/secondBlack"
+                android:fontFamily="@font/mitr_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:fontFamily="@font/mitr_regular"
+                android:textColor="@color/redWarning" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+
+            android:background="@drawable/rounded_edit_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Masukkan password"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:textColor="@color/inputText"
+                android:fontFamily="@font/mitr_light"
+                android:textSize="14sp"
+                android:inputType="numberPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--chekBox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chekbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#CDCED4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/syarat_ketentuan"
+                android:textColor="#242A31"
+                android:fontFamily="@font/mitr_light"
+                android:layout_gravity="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!--Button-->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/mitr_medium"
+            android:textColor="@color/white"
+            android:text="Daftar Sekarang" />
+
+        <!--Sudah punya akun-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah punya akun?"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="14sp"
+                android:textColor="#242A31" />
+
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

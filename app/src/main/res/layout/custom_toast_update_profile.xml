@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_info"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/textToast"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Update profile berhasil"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/mitr_medium"
+        android:drawablePadding="5dp"
+        android:textSize="8sp"
+        android:drawableStart="@drawable/ic_baseline_info_24"
+        />
+
+</LinearLayout>

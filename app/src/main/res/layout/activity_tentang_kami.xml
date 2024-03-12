@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:paddingBottom="25dp"
+    tools:context=".TentangKami">
+    <!--back-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backActivity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_activity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Kami"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_medium"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mitr_light"
+        android:textSize="12sp"
+        android:textColor="@color/thridBlack"
+        android:text="@string/lorem_ipsum"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
